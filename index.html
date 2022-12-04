@@ -5,7 +5,7 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
 
 <div class="container">
 
-  <div class="jumbotron" style="background-image: url('https://smart-data-engineering.github.io/algorithm-design-implementation-case.github.io/assets/images/page-header-bg.png');height: 514px;">
+  <div class="jumbotron" style="background-image: url('https://smart-data-engineering.github.io/assets/images/page-header-bg.png');height: 514px;">
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <h2 class="text-center">
@@ -17,7 +17,7 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
     <p>&nbsp;</p>
 
     <p class="text-center">
-      <a type="button" class="btn btn-primary" href="https://smart-data-engineering.github.io/algorithm-design-implementation-case.github.io/download/">
+      <a type="button" class="btn btn-primary" href="https://smart-data-engineering.github.io/download/">
         点击下载教学资源
       </a>
     </p>
@@ -32,8 +32,8 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
           <div class="title">
             <h3 class="text-center">{{ one_case.chapter_id }} {{ one_case.chapter_name }}</h3>
           </div>
-          <a href="https://smart-data-engineering.github.io/algorithm-design-implementation-case.github.io/case/{{one_case.case_id}}.html">
-            <img class="img-responsive" src="https://smart-data-engineering.github.io/algorithm-design-implementation-case.github.io/assets/images/qrcode/{{ one_case.case_id }}.png" alt="QR_Code">
+          <a href="https://smart-data-engineering.github.io/case/{{one_case.case_id}}.html">
+            <img class="img-responsive" src="https://smart-data-engineering.github.io/assets/images/qrcode/{{ one_case.case_id }}.png" alt="QR_Code">
           </a>
           <p class="text-center">
             <span class="badge">{{ one_case.case_id }}</span>
@@ -42,9 +42,10 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
             <h4 class="text-center">
               {{ one_case.case_name }}</h4>
             <p>
-              <a href="https://smart-data-engineering.github.io/algorithm-design-implementation-case.github.io/case/{{one_case.case_id}}.html">
+              <a href="https://smart-data-engineering.github.io/case/{{one_case.case_id}}.html">
                 <p class="text-center">
-                  https://smart-data-engineering.github.io/algorithm-design-implementation-case.github.io/case/{{one_case.case_id}}.html</p>
+                  打开案例
+                </p>
               </a>
             </p>
           </div>
@@ -57,7 +58,9 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
     {% endfor %}
 
     <footer>
-      {% include footer.html %}
+      {%- comment -%}
+        {% include footer.html %}
+      {%- endcomment -%}
     </footer>
 
   </div>
