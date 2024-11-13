@@ -24,6 +24,16 @@
     <!-- 内容部分 -->
     {{ content }}
 
+
+    <p>&nbsp;</p>
+
+    <!-- Footer -->
+    <div style="text-align: center;">
+        <div style="display: inline-block; width: 300px;">
+            {% include footer.html %}
+        </div>
+    </div>
+
     <!-- 公安备案 -->
     <div style="width:300px;margin:0 auto; padding:20px 0;">
         <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=53010202001554"
@@ -40,7 +50,7 @@
         <div style="display: inline-block; width: 300px;">
             <!-- 引入不蒜子统计 -->
             <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            
+
             <!-- 全站访问量 -->
             <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
             <br>
