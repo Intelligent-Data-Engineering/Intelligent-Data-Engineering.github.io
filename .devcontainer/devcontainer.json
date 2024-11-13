@@ -1,0 +1,13 @@
+{
+    "name": "Jekyll",
+    "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {
+            "installDirectlyFromGitHubRelease": true,
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers-extra/features/tldr:2": {
+            "version": "latest"
+        }
+    }
+}
